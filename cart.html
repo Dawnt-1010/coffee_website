@@ -80,7 +80,7 @@
     </div>
     <header>
        <!-- Nút quay lại -->
-        <a href="index.html" class="position-absolute top-0 start-0 m-3">
+        <a href="index2.html" class="position-absolute top-0 start-0 m-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L3.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
         </svg>
@@ -180,15 +180,27 @@
     </div>
     <button class="btn btn-danger btn-sm">Xóa</button>
   </div>
-  <!-- Nút mua -->
+   <!-- Nhập địa chỉ giao hàng -->
+<div class="mt-3">
+  <h3 class="mb-4">Địa chỉ giao hàng</h3>
+  <input type="text" id="address" class="form-control" value="Đường B, Phường C, Thành phố Hồ Chí Minh">
+</div>
+<!-- Phương thức thanh toán -->
+<div class="mt-3">
+  <h3 class="mb-4">Phương thức thanh toán</h3>
+  <input type="radio" class="btn-check" name="payment" id="cash" autocomplete="off">
+  <label class="btn btn-outline-dark me-2" for="cash">Tiền mặt</label>
+  <input type="radio" class="btn-check" name="payment" id="bank" autocomplete="off">
+  <label class="btn btn-outline-dark" for="bank">Chuyển khoản</label>
+</div>
+<!-- Nút mua -->
   <div class="text-center mt-4">
   <input type="checkbox" id="buyToggle" hidden>
   <label for="buyToggle" class="btn btn-primary btn-lg">Mua</label>
   <p class="fw-bold mt-3" style="display:none; color:#012701; font-size:1.5rem;" id="successMsg">
     Bạn đã mua thành công!
   </p>
-
-</div>
+  </div>
 </div>
     <div id="footer-bottom" >
       <div class="container-fluid">
