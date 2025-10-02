@@ -78,6 +78,22 @@
       <div class="preloader">
       </div>
     </div>
+     <!-- Offcanvas User -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasUser" aria-labelledby="UserInfo">
+  <div class="offcanvas-header justify-content-between">
+    <h5 class="offcanvas-title">Thông tin khách hàng</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Đóng"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p><strong>Tên:</strong> Nguyễn Văn A</p>
+    <p><strong>Email:</strong> nguyenvana@example.com</p>
+    <p><strong>SĐT:</strong> 0909 123 456</p>
+    <p><strong>Địa chỉ:</strong> Đường B, Phường C, Thành phố Hồ Chí Minh</p>
+    <!-- <button class="btn btn-outline-primary w-100" >Đăng xuất</button> -->
+     <button class="btn btn-outline-primary w-100 mb-3" onclick="window.location.href='index.html'">ĐĂNG XUẤT</button>
+     <button class="btn btn-outline-primary w-100" onclick="window.location.href='history.html'">LỊCH SỬ MUA HÀNG</button>
+  </div>
+</div>
     <header>
        <!-- Nút quay lại -->
         <a href="index2.html" class="position-absolute top-0 start-0 m-3">
@@ -127,6 +143,8 @@
             <div class="support-box text-end d-none d-xl-block">
               <!-- codemoi -->
                <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-3 align-items-center mt-4 mt-sm-0">
+  <a href="#" class="rounded-circle bg-light p-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasUser" aria-controls="offcanvasUser">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg></a>
   <!-- Icon Cart -->
   <a href="cart.html" class="rounded-circle bg-light p-2">
     <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
