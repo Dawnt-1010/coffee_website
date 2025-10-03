@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   </head>
-  <body>
+  <body style="background-image: url('images/background-cafe.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <defs>
@@ -73,18 +73,19 @@
         </symbol>
       </defs>
     </svg>
-
-    <div class="preloader-wrapper">
-      <div class="preloader">
-      </div>
-    </div>  
     <header>
+      <!-- Nút quay lại -->
+        <a href="index2.html" class="position-absolute top-0 start-0 m-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L3.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+        </svg>
+        </a>
       <div class="container-fluid"  style="background-image: url('images/background-cafe.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
        <div class="container-fluid">
         <div class="row py-3 border-bottom" >
           <div class="col-sm-4 col-lg-3 text-center text-sm-start">
             <div class="main-logo">
-              <a href="index.html">
+              <a href="index2.html">
                 <img src="images/logo2.png" alt="logo" class="img-fluid">
               </a>
             </div>
@@ -124,19 +125,7 @@
               </div>
           
           <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
-            <div class="support-box text-end d-none d-xl-block">
-              <!-- codemoi -->
-               <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-3 align-items-center mt-4 mt-sm-0">
-            <!-- Icon User -->
-            <a href="user.html" class="rounded-circle bg-light p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
-            </a>
-
-            <!-- Icon Cart -->
-            <a href="cart.html" class="rounded-circle bg-light p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
-            </a>
-            </div>
+          </div>
       
       <div class="container-fluid"  style="background-image: url('images/bg-light.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
           <div class="d-flex  justify-content-center justify-content-sm-between align-items-center">
@@ -239,7 +228,7 @@
           <button class="btn btn-success">+</button>
         </div>
 
-        <button class="btn btn-success w-100 py-2 fw-bold" >
+        <button class="btn btn-success w-100 py-2 fw-bold" onclick="window.location.href='cart.html'" >
                     🛒 MUA VỘI     
         </button>
       </div>
@@ -289,7 +278,7 @@
                                   </button>
                               </span>
                           </div>
-                          <a href="#" class="nav-link">MUA NHA <iconify-icon icon="uil:shopping-cart"></a>
+                          <a href="cart.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
                         </div>
                       </div>
                     </div>
@@ -320,7 +309,7 @@
                                   </button>
                               </span>
                           </div>
-                          <a href="#" class="nav-link">MUA NHA <iconify-icon icon="uil:shopping-cart"></a>
+                          <a href="cart.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
                         </div>
                       </div>
                     </div>
@@ -350,7 +339,7 @@
                                   </button>
                               </span>
                           </div>
-                          <a href="#" class="nav-link">MUA NHA <iconify-icon icon="uil:shopping-cart"></a>
+                          <a href="cart.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
                         </div>
                       </div>
                     </div>
@@ -380,7 +369,7 @@
                                   </button>
                               </span>
                           </div>
-                          <a href="#" class="nav-link">MUA NHA <iconify-icon icon="uil:shopping-cart"></a>
+                          <a href="cart.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
                         </div>
                       </div>
                     </div>
@@ -410,7 +399,7 @@
                                   </button>
                               </span>
                           </div>
-                          <a href="#" class="nav-link">MUA NHA <iconify-icon icon="uil:shopping-cart"></a>
+                          <a href="cart.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
                         </div>
                       </div>
                     </div>
@@ -434,10 +423,5 @@
         </div>
       </div>
     </div>
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
   </body>
 </html>
