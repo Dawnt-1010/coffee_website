@@ -92,22 +92,29 @@
           <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
             <div class="search-bar row bg-light p-2 my-2 rounded-4">
               <div class="col-md-4 d-none d-md-block">
-                <select class="form-select border-0 bg-transparent" onchange="location.href='index'+this.value">
-                  <option value="">Tất Cả Sản Phẩm</option>
-                  <option value="tra">TRÀ</option>
-                  <option value="cafe">CÀ PHÊ</option>
-                  <option value="trasua">TRÀ SỮA</option>
+                <select class="form-select border-0 bg-transparent">
+                  <option>Tất Cả Sản Phẩm</option>
+                  <option>TRÀ</option>
+                  <option>CÀ PHÊ</option>
+                  <option>TRÀ SỮA</option>
                 </select>
 
               </div>
-              <div class="col-11 col-md-7">
+              <div class="col-3 col-md-2">
+                <select class="form-select border-0 bg-transparent">
+                  <option>Giá</option>
+                  <option>Thấp-> Cao</option>
+                  <option>Cao-> Thấp</option>
+                </select>
+              </div>
+              <div class="col-7 col-md-5">
                 <form id="search-form" class="text-center" action="index.html" method="post">
-                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Còn nhiều lắm á, tìm thử coi" />
+                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Tìm Thử Coiiiii" />
                 </form>
               </div>
               <!-- Icon kính lúp có thể bấm -->
                <div class="col-1 d-flex align-items-center justify-content-center">
-              <a href="index.html" class="text-dark">
+              <a href="#HOT" class="text-dark">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/>
                   </svg>
@@ -164,7 +171,7 @@
       <!-- Hình ảnh + mô tả -->
       <div class="col-lg-8">
         <div class="card border-0 shadow-sm"  style="background-image: url('images/background-greenhill.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
-          <div class="card-body product-img text-center">
+          <div class="card-body product-img text-center" title="Hồng Trà Đào">
             <a href="infor_product.html" ><img src="images/anh1.jpg.png" alt="Hồng Trà Đào" class="img-fluid rounded" style="width: 300px;"></a>   
           </div>
         </div>
@@ -183,23 +190,6 @@
         <h3 class="fw-bold mb-1">Hồng Trà Đào </h3>
         <p class="text-muted">PB: 3124411</p>
         <h4 class="text-success fw-bold mb-4">49.000 đ</h4>
-
-        <!-- <div class="mb-3">
-        <label class="fw-semibold">Chọn kích cỡ</label>
-        <div class="d-flex gap-2">
-  
-            <input type="radio" class="btn-check" name="size" id="size-m" autocomplete="off">
-            <label class="btn btn-outline-success" for="size-m">
-            M<br><small>-6.000 đ</small>
-            </label>
-
-            <input type="radio" class="btn-check" name="size" id="size-l" autocomplete="off" checked>
-            <label class="btn btn-outline-success" for="size-l">
-            L<br><small>0 đ</small>
-            </label>
-        </div>
-        </div> -->
-
 
         <div class="mb-3">
         <label class="fw-semibold">Ngọt</label>
@@ -250,7 +240,7 @@
         </div>
 
         <button class="btn btn-success w-100 py-2 fw-bold" >
-                    <a  href="cart.html">🛒 MUA VỘI</a>       
+                    🛒 MUA VỘI     
         </button>
       </div>
     </div>
@@ -278,7 +268,7 @@
                         <span class="badge bg-success position-absolute m-3">-30%</span>
                         <a href="infor_product.html" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="infor_product.html" title="Product Title">
+                          <a href="infor_product.html" title="Hồng Trà Đào">
                             <img src="images/anh1.jpg.png"  class="tab-image">
                           </a>
                         </figure>
@@ -309,7 +299,7 @@
                         <span class="badge bg-success position-absolute m-3">-30%</span>
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="infor_product.html" title="Product Title">
+                          <a href="infor_product.html" title="Trà Vải Lài">
                             <img src="images/anh2.jpg.png"  class="tab-image">
                           </a>
                         </figure>
@@ -339,7 +329,7 @@
                       <div class="product-item">
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="infor_product.html" title="Product Title">
+                          <a href="infor_product.html" title="Trà Ô Long Dâu">
                             <img src="images/anh3.jpg.png"  class="tab-image">
                           </a>
                         </figure>
@@ -369,7 +359,7 @@
                       <div class="product-item">
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="infor_product.html" title="Product Title">
+                          <a href="infor_product.html" title="Trà Sữa Ô Long">
                             <img src="images/anh4.jpg.png"  class="tab-image">
                           </a>
                         </figure>
@@ -399,7 +389,7 @@
                       <div class="product-item">
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="infor_product.html" title="Product Title">
+                          <a href="infor_product.html" title="Trà Sữa Truyền Thống">
                             <img src="images/anh5.jpg.png"  class="tab-image">
                           </a>
                         </figure>
