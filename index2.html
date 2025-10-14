@@ -76,7 +76,7 @@
    <header>
       <div class="container-fluid"  style="background-image: url('images/background-cafe.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
        <div class="container-fluid">
-        <div class="row py-3 border-bottom" >
+        <div class="row py-3 " >
           <div class="col-sm-3 col-lg-2 text-center text-sm-start">
             <div class="main-logo">
               <a href="index2.html">
@@ -92,8 +92,7 @@
                   <option>TRÀ</option>
                   <option>CÀ PHÊ</option>
                   <option>TRÀ SỮA</option>
-                </select>
-
+                </select>         
               </div>
               <div class="col-5 col-md-3">
                 <select class="form-select border-0 bg-transparent">
@@ -107,7 +106,6 @@
                   <input type="text" class="form-control border-0 bg-transparent" placeholder="Tìm Thử Coiiiii" />
                 </form>
               </div>
-              <!-- Icon kính lúp có thể bấm -->
                <div class="col-1 d-flex align-items-center justify-content-center">
               <a href="#HOT" class="text-dark">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -119,8 +117,26 @@
               </div>
           <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
                <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-3 align-items-center mt-4 mt-sm-0">
-  <!-- Nút Văn A / Đăng xuất -->
-<a href="index.html" class="logout-btn">Văn A / Đăng xuất</a>
+ <!-- Nút Văn A / Đăng xuất -->
+<div class="user-menu">
+  <div class="user-section">
+    <a href="#" class="username">
+      Văn A
+      <span class="arrow">▼</span>
+    </a>
+    <div class="user-info">
+      <div style="text-align: left;">
+  <p><strong>Tên:</strong> Nguyễn Văn A</p>
+  <p><strong>Email:</strong> vana@example.com</p>
+  <p><strong>SĐT:</strong> 0909123456</p>
+  <p><strong>Địa chỉ:</strong> Đường B, Phường C, Thành phố Hồ Chí Minh</p>
+    </div>
+  <!-- Nút chỉnh sửa -->
+  <a href="edit.html" class="edit-btn">Chỉnh sửa</a>
+     </div>
+  </div>
+  <a href="index.html" class="logout-btn">Đăng xuất</a>
+</div>
   <!-- Icon Cart -->
   <a href="cart.html" class="rounded-circle bg-light p-2">
     <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
@@ -394,7 +410,7 @@
                                   </button>
                               </span>
                           </div>
-                          <a href="infor_product.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
+                          <a href="infor_product.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 r ounded-1 px-2 py-1 mt-2">MUA NHA</a>
                         </div>
                       </div>
                     </div>
